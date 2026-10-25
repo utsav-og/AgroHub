@@ -1,0 +1,511 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>15520_Practical Set 1</title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f5f7fa;
+        }
+
+        header {
+            background: linear-gradient(90deg, #681052, #9b287b);
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            color: #ffd21f;
+        }
+
+        nav {
+            background-color: #3d0732;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd21f;
+        }
+
+        section {
+            padding: 25px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #681052;
+        }
+
+        .overview {
+            background-color: white;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            border-left: 5px solid #681052;
+        }
+
+        .modules {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .module {
+            background-color: white;
+            width: 250px;
+            padding: 15px;
+            border: 2px solid #681052;
+            border-radius: 8px;
+        }
+
+        .module:hover {
+            border-color: #00a9c0;
+        }
+
+        .module h3 {
+            color: #681052;
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #681052;
+            color: white;
+        }
+
+        .resources {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .resources a {
+            color: #681052;
+        }
+
+        .video {
+            text-align: center;
+        }
+
+        video {
+            width: 50%;
+            border: 3px solid #681052;
+        }
+
+        .progress-box {
+            width: 70%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #681052;
+            border-radius: 8px;
+        }
+
+        form {
+            width: 60%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #681052;
+            border-radius: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: auto;
+            background-color: #681052;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            margin-right: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #00a9c0;
+        }
+
+        details {
+            width: 80%;
+            margin: 10px auto;
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #681052;
+        }
+
+        .animate {
+            text-align: center;
+            color: #681052;
+            font-weight: bold;
+            animation: move 2s infinite alternate;
+        }
+
+        @keyframes move {
+            from {
+                transform: translateX(-15px);
+            }
+
+            to {
+                transform: translateX(15px);
+            }
+        }
+
+        footer {
+            background-color: #16001f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-top: 4px solid #ffd21f;
+        }
+
+        footer a {
+            color: #00e5ff;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <h1>Web Development Fundamentals</h1>
+
+    <p>Online Course Learning Portal</p>
+
+    <p>Learn HTML, CSS, Multimedia and Bootstrap</p>
+
+</header>
+
+<nav>
+
+    <a href="#home">Home</a>
+    <a href="#modules">Modules</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#resources">Resources</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#faq">FAQ</a>
+
+</nav>
+
+<section id="home">
+
+    <h2>Course Overview</h2>
+
+    <div class="overview">
+
+        <p>
+            Web Development Fundamentals is a beginner-friendly course
+            that teaches students how to create and design webpages.
+        </p>
+
+        <h3>Learning Outcomes</h3>
+
+        <ul>
+            <li>Create webpages using HTML5.</li>
+            <li>Create forms and use HTML5 elements.</li>
+            <li>Design webpages using CSS.</li>
+            <li>Use multimedia in webpages.</li>
+            <li>Understand CSS layout and positioning.</li>
+            <li>Use basic Bootstrap components.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section id="modules">
+
+    <h2>Course Modules</h2>
+
+    <div class="modules">
+
+        <div class="module">
+            <h3>1. HTML Fundamentals</h3>
+            <p>Basic HTML tags, headings, paragraphs, lists and links.</p>
+        </div>
+
+        <div class="module">
+            <h3>2. HTML5 & Forms</h3>
+            <p>HTML5 elements, forms, input types and validation.</p>
+        </div>
+
+        <div class="module">
+            <h3>3. Multimedia</h3>
+            <p>Adding images, audio and video to webpages.</p>
+        </div>
+
+        <div class="module">
+            <h3>4. CSS Fundamentals</h3>
+            <p>Colors, fonts, borders, backgrounds and spacing.</p>
+        </div>
+
+        <div class="module">
+            <h3>5. CSS Layout</h3>
+            <p>Flexbox, positioning and webpage layouts.</p>
+        </div>
+
+        <div class="module">
+            <h3>6. Bootstrap</h3>
+            <p>Using Bootstrap classes and components for webpages.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="schedule">
+
+    <h2>Course Schedule</h2>
+
+    <table>
+
+        <tr>
+            <th>Week</th>
+            <th>Topic</th>
+            <th>Activity</th>
+        </tr>
+
+        <tr>
+            <td>Week 1</td>
+            <td>HTML Fundamentals</td>
+            <td>HTML Practice</td>
+        </tr>
+
+        <tr>
+            <td>Week 2</td>
+            <td>HTML5 & Forms</td>
+            <td>Form Creation</td>
+        </tr>
+
+        <tr>
+            <td>Week 3</td>
+            <td>Multimedia</td>
+            <td>Media Practice</td>
+        </tr>
+
+        <tr>
+            <td>Week 4</td>
+            <td>CSS Fundamentals</td>
+            <td>CSS Practice</td>
+        </tr>
+
+        <tr>
+            <td>Week 5</td>
+            <td>CSS Layout</td>
+            <td>Layout Design</td>
+        </tr>
+
+        <tr>
+            <td>Week 6</td>
+            <td>Bootstrap</td>
+            <td>Bootstrap Project</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<section id="resources">
+
+    <h2>Learning Resources</h2>
+
+    <div class="resources">
+
+        <p><a href="https://www.w3schools.com/html/">HTML Tutorial</a></p>
+
+        <p><a href="https://www.w3schools.com/css/">CSS Tutorial</a></p>
+
+        <p><a href="https://www.w3schools.com/bootstrap5/">Bootstrap Tutorial</a></p>
+
+        <p><a href="https://developer.mozilla.org/">MDN Web Docs</a></p>
+
+    </div>
+
+</section>
+
+<section class="video">
+
+    <h2>Instructional Video</h2>
+
+    <video controls width="10">
+
+        <source src="instruction.mp4" type="video/mp4">
+
+        Your browser does not support video.
+
+    </video>
+
+    <p>Introduction to Web Development</p>
+
+</section>
+
+<section>
+
+    <h2>Student Progress</h2>
+
+    <div class="progress-box">
+
+        <p>HTML Fundamentals</p>
+        <progress value="90" max="100"></progress>
+
+        <p>HTML5 & Forms</p>
+        <progress value="75" max="100"></progress>
+
+        <p>CSS Fundamentals</p>
+        <progress value="65" max="100"></progress>
+
+        <p>CSS Layout</p>
+        <progress value="50" max="100"></progress>
+
+        <p>Bootstrap</p>
+        <progress value="30" max="100"></progress>
+
+    </div>
+
+</section>
+
+<section id="quiz">
+
+    <h2>Online Quiz</h2>
+
+    <form>
+
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <p>1. Which tag is used to create a hyperlink?</p>
+
+        <input type="radio" name="q1" value="a"> &lt;a&gt;
+        <input type="radio" name="q1" value="p"> &lt;p&gt;
+
+        <p>2. Which language is used to style webpages?</p>
+
+        <select required>
+            <option value="">Select Answer</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>PHP</option>
+        </select>
+
+        <p>3. Select the technologies you have learned:</p>
+
+        <input type="checkbox" name="tech"> HTML
+        <input type="checkbox" name="tech"> CSS
+        <input type="checkbox" name="tech"> Bootstrap
+
+        <p>4. Rate your confidence:</p>
+
+        <input type="range" min="1" max="10">
+
+        <p>5. Select your preferred study date:</p>
+
+        <input type="date" required>
+
+        <br><br>
+
+        <input type="submit" value="Submit Quiz">
+        <input type="reset" value="Clear">
+
+    </form>
+
+</section>
+
+<section id="faq">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+        <summary>Who can join this course?</summary>
+        <p>Students who want to learn basic web development can join this course.</p>
+    </details>
+
+    <details>
+        <summary>Do I need programming experience?</summary>
+        <p>No. The course starts from basic HTML and CSS concepts.</p>
+    </details>
+
+    <details>
+        <summary>What will I learn after completing the course?</summary>
+        <p>You will be able to create basic webpages using HTML, CSS and Bootstrap.</p>
+    </details>
+
+</section>
+
+<section>
+
+    <h2>Bootstrap Component</h2>
+
+    <div class="container">
+
+        <div class="alert alert-primary text-center" role="alert">
+            New students can start the Web Development Fundamentals course today!
+        </div>
+
+    </div>
+
+</section>
+
+<p class="animate">Start Learning • Build Websites • Improve Your Skills</p>
+
+<footer>
+
+    <h3>Web Development Fundamentals</h3>
+
+    <p>Faculty: Department of Information Technology</p>
+
+    <p>Email: faculty@college.edu</p>
+
+    <p>Phone: +91 98765 43210</p>
+
+    <p>
+        <a href="#home">Home</a>
+        <a href="#modules">Modules</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#faq">FAQ</a>
+    </p>
+
+    <p>IAR No: 15520</p>
+
+</footer>
+
+</body>
+</html>
