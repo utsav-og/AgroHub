@@ -1,0 +1,14 @@
+{
+  "name": "agrohub",
+  "version": "1.0.0",
+  "description": "AgroHub Smart Agriculture & Farmer Marketplace Platform",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "seed": "npm --prefix server run seed",
+    "server": "npm --prefix server start",
+    "client": "npm --prefix client run dev"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.65.1"
+  }
+}
